@@ -30,7 +30,7 @@ def sync_github_profiles(github_tokens, opensearch_conn_info):
                                                                          }
                                                                      }
                                                                  }
-                                    draw io居中                         ]
+                                    ]
                                                          }
                                                      },
                                                      "sort": [
@@ -88,9 +88,11 @@ def sync_github_profiles(github_tokens, opensearch_conn_info):
     session = requests.Session()
     opensearch_api = OpensearchAPI()
 
+    start_time = datetime.datetime.now().timestamp()
     # end_time = (datetime.datetime.now() + datetime.timedelta(hours=3)).timestamp()
-    end_time = (datetime.datetime.now() + datetime.timedelta(microseconds=1800)).timestamp()
+    end_time = (datetime.datetime.now() + datetime.timedelta(minutes=30)).timestamp()
     current_profile_id = None
+    num_handled = 0
     for existing_github_profile in existing_github_profiles['hits']['hits']:
         current_profile_id = existing_github_profile["_source"]["id"]
         current_profile_login = existing_github_profile["_source"]["login"]
@@ -111,6 +113,14 @@ def sync_github_profiles(github_tokens, opensearch_conn_info):
         else:
             logger.info(f"{current_profile_login}'s github profiles of opensearch is latest.")
         # 判断当前时间是否为查询有效时间（当日零点到凌晨三点之间：一小时只查询比较不存储约处理360个profile,为保证高效可用，每次查询时间由2小时延长至3小时）
+
+        num_handled += 1
+        seconds_elapsed = int(datetime.datetime.now().timestamp() - start_time)
+        if seconds_elapsed % 30 == 0:
+            logger.info(f'After {seconds_elapsed} seconds, {num_handled} profiles is processed')
+            num_handled_avg = num_handled / seconds_elapsed
+            logger.info(f'Avg: {num_handled_avg}/s')
+
         if datetime.datetime.now().timestamp() > end_time:
             logger.info('The connection has timed out.')
             break

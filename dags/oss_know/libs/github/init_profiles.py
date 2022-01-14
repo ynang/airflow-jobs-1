@@ -13,6 +13,8 @@ def load_github_ids_by_repo(opensearch_conn_infos, owner, repo):
     init_profile_ids = load_ids_from_issues_timeline(opensearch_client, owner,
                                                           repo)
     init_profile_ids += load_ids_from_commits(opensearch_client, owner, repo)
+    logger.info(f'load github ids of {owner}/{repo}')
+    logger.info(init_profile_ids)
     return init_profile_ids
 
 

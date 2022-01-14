@@ -22,6 +22,9 @@ with DAG(
         on_success_callback=cleanup_xcom
 ) as dag:
     def start_load_github_profile(ds, **kwargs):
+        need_sync_github_profile_repos = Variable.get(NEED_INIT_GITHUB_PROFILES_REPOS, deserialize_json=True)
+        from loguru import logger
+        logger.info(f'[JUZHEN DEBUG]: {need_sync_github_profile_repos}')
         return 'End start_load_github_profile'
 
 
@@ -63,6 +66,8 @@ with DAG(
 
 
     need_sync_github_profile_repos = Variable.get(NEED_INIT_GITHUB_PROFILES_REPOS, deserialize_json=True)
+    from loguru import logger
+    logger.info(f'[JUZHEN DEBUG]: {need_sync_github_profile_repos}')
 
     op_load_github_repo_profiles = PythonOperator(
         task_id='op_load_github_repo_profiles',
