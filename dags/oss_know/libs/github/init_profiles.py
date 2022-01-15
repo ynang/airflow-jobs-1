@@ -59,7 +59,7 @@ def load_ids_from_issues_timeline(opensearch_client, owner, repo):
             all_issues_timeline_users.add(issue_timeline_raw_data["source"]["issue"]["user"]["id"])
         elif issue_timeline_raw_data["event"] != "committed":
             for key in ["user", "actor", "assignee"]:
-                if key in issue_timeline_raw_data:
+                if key in issue_timeline_raw_data and issue_timeline_raw_data[key] and "id" in issue_timeline_raw_data[key]:
                     all_issues_timeline_users.add(issue_timeline_raw_data[key]["id"])
 
     return list(all_issues_timeline_users)
