@@ -55,8 +55,12 @@ def load_ids_from_issues_timeline(opensearch_client, owner, repo):
     for issue_timeline in res:
         issue_timeline_raw_data = issue_timeline["_source"]["raw_data"]
         if issue_timeline_raw_data["event"] == "cross-referenced":
-            all_issues_timeline_users.add(issue_timeline_raw_data["actor"]["id"])
-            all_issues_timeline_users.add(issue_timeline_raw_data["source"]["issue"]["user"]["id"])
+            if issue_timeline_raw_data['actor'] and 'id' in issue_timeline_raw_data['actor']:
+                all_issues_timeline_users.add(issue_timeline_raw_data["actor"]["id"])
+            try:
+                all_issues_timeline_users.add(issue_timeline_raw_data["source"]["issue"]["user"]["id"])
+            except Exception as e:
+                logger.error(f'Failed to collect user id from timeline source, {e}')
         elif issue_timeline_raw_data["event"] != "committed":
             for key in ["user", "actor", "assignee"]:
                 if key in issue_timeline_raw_data and issue_timeline_raw_data[key] and "id" in issue_timeline_raw_data[key]:
