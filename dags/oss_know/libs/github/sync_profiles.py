@@ -116,7 +116,7 @@ def sync_github_profiles(github_tokens, opensearch_conn_info):
 
         num_handled += 1
         seconds_elapsed = int(datetime.datetime.now().timestamp() - start_time)
-        if seconds_elapsed % 30 == 0:
+        if seconds_elapsed % 30 == 0 and seconds_elapsed != 0:
             logger.info(f'After {seconds_elapsed} seconds, {num_handled} profiles is processed')
             num_handled_avg = num_handled / seconds_elapsed
             logger.info(f'Avg: {num_handled_avg}/s')
