@@ -1,6 +1,6 @@
 CLICKHOUSE_RAW_DATA = "raw_data"
 
-CLICKHOUSE_EMAIL_ADDRESS = 'email_address'
+CLICKHOUSE_EMAIL_ADDRESS = 'email_address_test03_easy_local'
 EMAIL_ADDRESS_SEARCH_KEY__UPDATED_AT = 'search_key__updated_at'
 EMAIL_ADDRESS_SEARCH_KEY__EMAIL = 'search_key__email'
 EMAIL_ADDRESS_EMIAL = 'email'
