@@ -1,5 +1,5 @@
 import datetime
-
+from grimoire_elk.enriched.mbox import MBoxEnrich
 from oss_know.libs.util.base import infer_country_from_emailcctld, infer_country_from_emaildomain, \
     infer_company_from_emaildomain, infer_country_from_company, get_clickhouse_client
 from oss_know.libs.base_dict.clickhouse import CLICKHOUSE_EMAIL_ADDRESS, EMAIL_ADDRESS_SEARCH_KEY__UPDATED_AT, \
@@ -55,9 +55,9 @@ def load_all_email_address(clickhouse_server_info):
             ck.execute_no_params(delete_need_update_sql)
 
     init_email_address_dict = dict(init_email_address_dict, **need_update_email_id_pair)
-    for k,v in init_email_address_dict.copy().items():
-        if v==0:
-            init_email_address_dict.pop(k)
+    # for k, v in init_email_address_dict.copy().items():
+    #     if v == 0:
+    #         init_email_address_dict.pop(k)
     # count_test = 0
     values_to_insert = []
     total_count = len(init_email_address_dict)
@@ -70,7 +70,14 @@ def load_all_email_address(clickhouse_server_info):
     count = 1
     page_num = 1
     for k, v in init_email_address_dict.items():
+        get_table_sql = f"DESC {CLICKHOUSE_EMAIL_ADDRESS}"
+        table = ck.execute_no_params(get_table_sql)
         value = {}
+        key = {'Int64': 0, 'String': ''}
+        for tuple in table:
+            column = tuple[0]
+            default = key[tuple[1]]
+            value[column] = default
         value[EMAIL_ADDRESS_SEARCH_KEY__UPDATED_AT] = int(datetime.datetime.now().timestamp() * 1000)
         value[EMAIL_ADDRESS_SEARCH_KEY__EMAIL] = k
         value[EMAIL_ADDRESS_EMIAL] = k
@@ -91,9 +98,6 @@ def load_all_email_address(clickhouse_server_info):
         else:
             value[EMAIL_ADDRESS_COUNTRY_INFERRED_FROM_COMPANY] = ''
             profile_value = get_profile_value(profile_id=v, clickhouse_client=ck)
-            if not profile_value:
-                value = {}
-                continue
             value = dict(value, **profile_value)
             values_to_insert.append(value)
             print("加一条")
@@ -140,6 +144,19 @@ def get_profile_value(profile_id, clickhouse_client):
                 profile_property = profile_property.replace('\'', '\"')
             profile_value['github__profile__' + profile_columns[index][0]] = profile_property
     return profile_value
+
+
+def load_email_address_default(clickhouse_server_info):
+    ck = get_clickhouse_client(clickhouse_server_info)
+    # get_email_from_maillists_sql = f""
+    mbox_helper = MBoxEnrich()
+    email_from_maillists0 = mbox_helper.get_sh_identity("wk at gnupg.org (Werner Koch)")
+    print("email_from_maillists0",email_from_maillists0["email"])
+    email_from_maillists1= mbox_helper.get_sh_identity("kristian.fiskerstrand at sumptuouscapital.com (Kristian Fiskerstrand)")
+    print("email_from_maillists1",email_from_maillists1["email"])
+
+
+
 
     # todo: 从clickhouse中的gits中根据指定email获取该email参与过的owner、repo
     # for email_address in all_email_address:
