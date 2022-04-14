@@ -10,532 +10,868 @@
     ],
     "need_init_github_commits_repos": [
         {
-            "owner": "systemd",
-            "repo": "systemd",
+            "owner": "jupyter",
+            "repo": "notebook",
             "since": "1970-01-01T00:00:00Z",
-            "until": "2022-04-03T11:58:58Z"
+            "until": "2022-04-14T06:27:46Z"
         },
         {
-            "owner": "openssl",
-            "repo": "openssl",
+            "owner": "jupyter",
+            "repo": "docker-stacks",
             "since": "1970-01-01T00:00:00Z",
-            "until": "2022-04-03T11:58:58Z"
+            "until": "2022-04-14T06:27:46Z"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "jupyter_client",
+            "since": "1970-01-01T00:00:00Z",
+            "until": "2022-04-14T06:27:46Z"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "nbformat",
+            "since": "1970-01-01T00:00:00Z",
+            "until": "2022-04-14T06:27:46Z"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "jupyter.github.io",
+            "since": "1970-01-01T00:00:00Z",
+            "until": "2022-04-14T06:27:46Z"
+        },
+        {
+            "owner": "wasmerio",
+            "repo": "wasmer",
+            "since": "1970-01-01T00:00:00Z",
+            "until": "2022-04-14T06:27:46Z"
         },
         {
             "owner": "google",
-            "repo": "leveldb",
+            "repo": "jax",
             "since": "1970-01-01T00:00:00Z",
-            "until": "2022-04-03T11:58:58Z"
+            "until": "2022-04-14T06:27:46Z"
         },
         {
-            "owner": "facebook",
-            "repo": "zstd",
+            "owner": "PaddlePaddle",
+            "repo": "Paddle",
             "since": "1970-01-01T00:00:00Z",
-            "until": "2022-04-03T11:58:58Z"
+            "until": "2022-04-14T06:27:46Z"
         },
         {
-            "owner": "vim",
-            "repo": "vim",
+            "owner": "DPDK",
+            "repo": "dpdk",
             "since": "1970-01-01T00:00:00Z",
-            "until": "2022-04-03T11:58:58Z"
+            "until": "2022-04-14T06:27:46Z"
         },
         {
-            "owner": "curl",
-            "repo": "curl",
+            "owner": "CGAL",
+            "repo": "cgal",
             "since": "1970-01-01T00:00:00Z",
-            "until": "2022-04-03T11:58:58Z"
+            "until": "2022-04-14T06:27:46Z"
         },
         {
-            "owner": "grpc",
-            "repo": "grpc",
+            "owner": "mapbox",
+            "repo": "mapbox-gl-js",
             "since": "1970-01-01T00:00:00Z",
-            "until": "2022-04-03T11:58:58Z"
+            "until": "2022-04-14T06:27:46Z"
         },
         {
-            "owner": "moby",
-            "repo": "moby",
+            "owner": "facebookresearch",
+            "repo": "faiss",
             "since": "1970-01-01T00:00:00Z",
-            "until": "2022-04-03T11:58:58Z"
+            "until": "2022-04-14T06:27:46Z"
         },
         {
-            "owner": "docker",
-            "repo": "cli",
+            "owner": "jina-ai",
+            "repo": "jina",
             "since": "1970-01-01T00:00:00Z",
-            "until": "2022-04-03T11:58:58Z"
+            "until": "2022-04-14T06:27:46Z"
+        },
+        {
+            "owner": "ZJU-OpenKS",
+            "repo": "OpenKS",
+            "since": "1970-01-01T00:00:00Z",
+            "until": "2022-04-14T06:27:46Z"
+        },
+        {
+            "owner": "delta-io",
+            "repo": "delta",
+            "since": "1970-01-01T00:00:00Z",
+            "until": "2022-04-14T06:27:46Z"
         }
     ],
     "need_init_github_issues_comments_repos": [
         {
-            "owner": "systemd",
-            "repo": "systemd"
+            "owner": "jupyter",
+            "repo": "notebook"
         },
         {
-            "owner": "openssl",
-            "repo": "openssl"
+            "owner": "jupyter",
+            "repo": "docker-stacks"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "jupyter_client"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "nbformat"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "jupyter.github.io"
+        },
+        {
+            "owner": "wasmerio",
+            "repo": "wasmer"
         },
         {
             "owner": "google",
-            "repo": "leveldb"
+            "repo": "jax"
         },
         {
-            "owner": "facebook",
-            "repo": "zstd"
+            "owner": "PaddlePaddle",
+            "repo": "Paddle"
         },
         {
-            "owner": "vim",
-            "repo": "vim"
+            "owner": "DPDK",
+            "repo": "dpdk"
         },
         {
-            "owner": "curl",
-            "repo": "curl"
+            "owner": "CGAL",
+            "repo": "cgal"
         },
         {
-            "owner": "grpc",
-            "repo": "grpc"
+            "owner": "mapbox",
+            "repo": "mapbox-gl-js"
         },
         {
-            "owner": "moby",
-            "repo": "moby"
+            "owner": "facebookresearch",
+            "repo": "faiss"
         },
         {
-            "owner": "docker",
-            "repo": "cli"
+            "owner": "jina-ai",
+            "repo": "jina"
+        },
+        {
+            "owner": "ZJU-OpenKS",
+            "repo": "OpenKS"
+        },
+        {
+            "owner": "delta-io",
+            "repo": "delta"
         }
     ],
     "need_init_github_issues_repos": [
         {
-            "owner": "systemd",
-            "repo": "systemd"
+            "owner": "jupyter",
+            "repo": "notebook"
         },
         {
-            "owner": "openssl",
-            "repo": "openssl"
+            "owner": "jupyter",
+            "repo": "docker-stacks"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "jupyter_client"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "nbformat"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "jupyter.github.io"
+        },
+        {
+            "owner": "wasmerio",
+            "repo": "wasmer"
         },
         {
             "owner": "google",
-            "repo": "leveldb"
+            "repo": "jax"
         },
         {
-            "owner": "facebook",
-            "repo": "zstd"
+            "owner": "PaddlePaddle",
+            "repo": "Paddle"
         },
         {
-            "owner": "vim",
-            "repo": "vim"
+            "owner": "DPDK",
+            "repo": "dpdk"
         },
         {
-            "owner": "curl",
-            "repo": "curl"
+            "owner": "CGAL",
+            "repo": "cgal"
         },
         {
-            "owner": "grpc",
-            "repo": "grpc"
+            "owner": "mapbox",
+            "repo": "mapbox-gl-js"
         },
         {
-            "owner": "moby",
-            "repo": "moby"
+            "owner": "facebookresearch",
+            "repo": "faiss"
         },
         {
-            "owner": "docker",
-            "repo": "cli"
+            "owner": "jina-ai",
+            "repo": "jina"
+        },
+        {
+            "owner": "ZJU-OpenKS",
+            "repo": "OpenKS"
+        },
+        {
+            "owner": "delta-io",
+            "repo": "delta"
         }
     ],
     "need_init_github_issues_timeline_repos": [
         {
-            "owner": "systemd",
-            "repo": "systemd"
+            "owner": "jupyter",
+            "repo": "notebook"
         },
         {
-            "owner": "openssl",
-            "repo": "openssl"
+            "owner": "jupyter",
+            "repo": "docker-stacks"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "jupyter_client"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "nbformat"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "jupyter.github.io"
+        },
+        {
+            "owner": "wasmerio",
+            "repo": "wasmer"
         },
         {
             "owner": "google",
-            "repo": "leveldb"
+            "repo": "jax"
         },
         {
-            "owner": "facebook",
-            "repo": "zstd"
+            "owner": "PaddlePaddle",
+            "repo": "Paddle"
         },
         {
-            "owner": "vim",
-            "repo": "vim"
+            "owner": "DPDK",
+            "repo": "dpdk"
         },
         {
-            "owner": "curl",
-            "repo": "curl"
+            "owner": "CGAL",
+            "repo": "cgal"
         },
         {
-            "owner": "grpc",
-            "repo": "grpc"
+            "owner": "mapbox",
+            "repo": "mapbox-gl-js"
         },
         {
-            "owner": "moby",
-            "repo": "moby"
+            "owner": "facebookresearch",
+            "repo": "faiss"
         },
         {
-            "owner": "docker",
-            "repo": "cli"
+            "owner": "jina-ai",
+            "repo": "jina"
+        },
+        {
+            "owner": "ZJU-OpenKS",
+            "repo": "OpenKS"
+        },
+        {
+            "owner": "delta-io",
+            "repo": "delta"
         }
     ],
     "need_init_github_pull_requests_repos": [
         {
-            "owner": "systemd",
-            "repo": "systemd"
+            "owner": "jupyter",
+            "repo": "notebook"
         },
         {
-            "owner": "openssl",
-            "repo": "openssl"
+            "owner": "jupyter",
+            "repo": "docker-stacks"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "jupyter_client"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "nbformat"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "jupyter.github.io"
+        },
+        {
+            "owner": "wasmerio",
+            "repo": "wasmer"
         },
         {
             "owner": "google",
-            "repo": "leveldb"
+            "repo": "jax"
         },
         {
-            "owner": "facebook",
-            "repo": "zstd"
+            "owner": "PaddlePaddle",
+            "repo": "Paddle"
         },
         {
-            "owner": "vim",
-            "repo": "vim"
+            "owner": "DPDK",
+            "repo": "dpdk"
         },
         {
-            "owner": "curl",
-            "repo": "curl"
+            "owner": "CGAL",
+            "repo": "cgal"
         },
         {
-            "owner": "grpc",
-            "repo": "grpc"
+            "owner": "mapbox",
+            "repo": "mapbox-gl-js"
         },
         {
-            "owner": "moby",
-            "repo": "moby"
+            "owner": "facebookresearch",
+            "repo": "faiss"
         },
         {
-            "owner": "docker",
-            "repo": "cli"
+            "owner": "jina-ai",
+            "repo": "jina"
+        },
+        {
+            "owner": "ZJU-OpenKS",
+            "repo": "OpenKS"
+        },
+        {
+            "owner": "delta-io",
+            "repo": "delta"
         }
     ],
     "need_init_gits": [
         {
-            "owner": "systemd",
-            "repo": "systemd",
-            "url": "https://github.com/systemd/systemd.git"
+            "owner": "jupyter",
+            "repo": "notebook",
+            "url": "https://github.com/jupyter/notebook.git"
         },
         {
-            "owner": "openssl",
-            "repo": "openssl",
-            "url": "https://github.com/openssl/openssl.git"
+            "owner": "jupyter",
+            "repo": "docker-stacks",
+            "url": "https://github.com/jupyter/docker-stacks.git"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "jupyter_client",
+            "url": "https://github.com/jupyter/jupyter_client.git"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "nbformat",
+            "url": "https://github.com/jupyter/nbformat.git"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "jupyter.github.io",
+            "url": "https://github.com/jupyter/jupyter.github.io.git"
+        },
+        {
+            "owner": "wasmerio",
+            "repo": "wasmer",
+            "url": "https://github.com/wasmerio/wasmer.git"
         },
         {
             "owner": "google",
-            "repo": "leveldb",
-            "url": "https://github.com/google/leveldb.git"
+            "repo": "jax",
+            "url": "https://github.com/google/jax.git"
         },
         {
-            "owner": "facebook",
-            "repo": "zstd",
-            "url": "https://github.com/facebook/zstd.git"
+            "owner": "PaddlePaddle",
+            "repo": "Paddle",
+            "url": "https://github.com/PaddlePaddle/Paddle.git"
         },
         {
-            "owner": "vim",
-            "repo": "vim",
-            "url": "https://github.com/vim/vim.git"
+            "owner": "DPDK",
+            "repo": "dpdk",
+            "url": "https://github.com/DPDK/dpdk.git"
         },
         {
-            "owner": "curl",
-            "repo": "curl",
-            "url": "https://github.com/curl/curl.git"
+            "owner": "CGAL",
+            "repo": "cgal",
+            "url": "https://github.com/CGAL/cgal.git"
         },
         {
-            "owner": "grpc",
-            "repo": "grpc",
-            "url": "https://github.com/grpc/grpc.git"
+            "owner": "mapbox",
+            "repo": "mapbox-gl-js",
+            "url": "https://github.com/mapbox/mapbox-gl-js.git"
         },
         {
-            "owner": "moby",
-            "repo": "moby",
-            "url": "https://github.com/moby/moby.git"
+            "owner": "facebookresearch",
+            "repo": "faiss",
+            "url": "https://github.com/facebookresearch/faiss.git"
         },
         {
-            "owner": "docker",
-            "repo": "cli",
-            "url": "https://github.com/docker/cli.git"
+            "owner": "jina-ai",
+            "repo": "jina",
+            "url": "https://github.com/jina-ai/jina.git"
+        },
+        {
+            "owner": "ZJU-OpenKS",
+            "repo": "OpenKS",
+            "url": "https://github.com/ZJU-OpenKS/OpenKS.git"
+        },
+        {
+            "owner": "delta-io",
+            "repo": "delta",
+            "url": "https://github.com/delta-io/delta.git"
         }
     ],
     "need_sync_github_commits_repos": [
         {
-            "owner": "systemd",
-            "repo": "systemd"
+            "owner": "jupyter",
+            "repo": "notebook"
         },
         {
-            "owner": "openssl",
-            "repo": "openssl"
+            "owner": "jupyter",
+            "repo": "docker-stacks"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "jupyter_client"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "nbformat"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "jupyter.github.io"
+        },
+        {
+            "owner": "wasmerio",
+            "repo": "wasmer"
         },
         {
             "owner": "google",
-            "repo": "leveldb"
+            "repo": "jax"
         },
         {
-            "owner": "facebook",
-            "repo": "zstd"
+            "owner": "PaddlePaddle",
+            "repo": "Paddle"
         },
         {
-            "owner": "vim",
-            "repo": "vim"
+            "owner": "DPDK",
+            "repo": "dpdk"
         },
         {
-            "owner": "curl",
-            "repo": "curl"
+            "owner": "CGAL",
+            "repo": "cgal"
         },
         {
-            "owner": "grpc",
-            "repo": "grpc"
+            "owner": "mapbox",
+            "repo": "mapbox-gl-js"
         },
         {
-            "owner": "moby",
-            "repo": "moby"
+            "owner": "facebookresearch",
+            "repo": "faiss"
         },
         {
-            "owner": "docker",
-            "repo": "cli"
+            "owner": "jina-ai",
+            "repo": "jina"
+        },
+        {
+            "owner": "ZJU-OpenKS",
+            "repo": "OpenKS"
+        },
+        {
+            "owner": "delta-io",
+            "repo": "delta"
         }
     ],
     "need_sync_github_issues_comments_repos": [
         {
-            "owner": "systemd",
-            "repo": "systemd"
+            "owner": "jupyter",
+            "repo": "notebook"
         },
         {
-            "owner": "openssl",
-            "repo": "openssl"
+            "owner": "jupyter",
+            "repo": "docker-stacks"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "jupyter_client"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "nbformat"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "jupyter.github.io"
+        },
+        {
+            "owner": "wasmerio",
+            "repo": "wasmer"
         },
         {
             "owner": "google",
-            "repo": "leveldb"
+            "repo": "jax"
         },
         {
-            "owner": "facebook",
-            "repo": "zstd"
+            "owner": "PaddlePaddle",
+            "repo": "Paddle"
         },
         {
-            "owner": "vim",
-            "repo": "vim"
+            "owner": "DPDK",
+            "repo": "dpdk"
         },
         {
-            "owner": "curl",
-            "repo": "curl"
+            "owner": "CGAL",
+            "repo": "cgal"
         },
         {
-            "owner": "grpc",
-            "repo": "grpc"
+            "owner": "mapbox",
+            "repo": "mapbox-gl-js"
         },
         {
-            "owner": "moby",
-            "repo": "moby"
+            "owner": "facebookresearch",
+            "repo": "faiss"
         },
         {
-            "owner": "docker",
-            "repo": "cli"
+            "owner": "jina-ai",
+            "repo": "jina"
+        },
+        {
+            "owner": "ZJU-OpenKS",
+            "repo": "OpenKS"
+        },
+        {
+            "owner": "delta-io",
+            "repo": "delta"
         }
     ],
     "need_sync_github_issues_repos": [
         {
-            "owner": "systemd",
-            "repo": "systemd"
+            "owner": "jupyter",
+            "repo": "notebook"
         },
         {
-            "owner": "openssl",
-            "repo": "openssl"
+            "owner": "jupyter",
+            "repo": "docker-stacks"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "jupyter_client"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "nbformat"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "jupyter.github.io"
+        },
+        {
+            "owner": "wasmerio",
+            "repo": "wasmer"
         },
         {
             "owner": "google",
-            "repo": "leveldb"
+            "repo": "jax"
         },
         {
-            "owner": "facebook",
-            "repo": "zstd"
+            "owner": "PaddlePaddle",
+            "repo": "Paddle"
         },
         {
-            "owner": "vim",
-            "repo": "vim"
+            "owner": "DPDK",
+            "repo": "dpdk"
         },
         {
-            "owner": "curl",
-            "repo": "curl"
+            "owner": "CGAL",
+            "repo": "cgal"
         },
         {
-            "owner": "grpc",
-            "repo": "grpc"
+            "owner": "mapbox",
+            "repo": "mapbox-gl-js"
         },
         {
-            "owner": "moby",
-            "repo": "moby"
+            "owner": "facebookresearch",
+            "repo": "faiss"
         },
         {
-            "owner": "docker",
-            "repo": "cli"
+            "owner": "jina-ai",
+            "repo": "jina"
+        },
+        {
+            "owner": "ZJU-OpenKS",
+            "repo": "OpenKS"
+        },
+        {
+            "owner": "delta-io",
+            "repo": "delta"
         }
     ],
     "need_sync_github_pull_repuests_repos": [
         {
-            "owner": "systemd",
-            "repo": "systemd"
+            "owner": "jupyter",
+            "repo": "notebook"
         },
         {
-            "owner": "openssl",
-            "repo": "openssl"
+            "owner": "jupyter",
+            "repo": "docker-stacks"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "jupyter_client"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "nbformat"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "jupyter.github.io"
+        },
+        {
+            "owner": "wasmerio",
+            "repo": "wasmer"
         },
         {
             "owner": "google",
-            "repo": "leveldb"
+            "repo": "jax"
         },
         {
-            "owner": "facebook",
-            "repo": "zstd"
+            "owner": "PaddlePaddle",
+            "repo": "Paddle"
         },
         {
-            "owner": "vim",
-            "repo": "vim"
+            "owner": "DPDK",
+            "repo": "dpdk"
         },
         {
-            "owner": "curl",
-            "repo": "curl"
+            "owner": "CGAL",
+            "repo": "cgal"
         },
         {
-            "owner": "grpc",
-            "repo": "grpc"
+            "owner": "mapbox",
+            "repo": "mapbox-gl-js"
         },
         {
-            "owner": "moby",
-            "repo": "moby"
+            "owner": "facebookresearch",
+            "repo": "faiss"
         },
         {
-            "owner": "docker",
-            "repo": "cli"
+            "owner": "jina-ai",
+            "repo": "jina"
+        },
+        {
+            "owner": "ZJU-OpenKS",
+            "repo": "OpenKS"
+        },
+        {
+            "owner": "delta-io",
+            "repo": "delta"
         }
     ],
     "need_init_github_profiles_repos": [
         {
-            "owner": "systemd",
-            "repo": "systemd"
+            "owner": "jupyter",
+            "repo": "notebook"
         },
         {
-            "owner": "openssl",
-            "repo": "openssl"
+            "owner": "jupyter",
+            "repo": "docker-stacks"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "jupyter_client"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "nbformat"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "jupyter.github.io"
+        },
+        {
+            "owner": "wasmerio",
+            "repo": "wasmer"
         },
         {
             "owner": "google",
-            "repo": "leveldb"
+            "repo": "jax"
         },
         {
-            "owner": "facebook",
-            "repo": "zstd"
+            "owner": "PaddlePaddle",
+            "repo": "Paddle"
         },
         {
-            "owner": "vim",
-            "repo": "vim"
+            "owner": "DPDK",
+            "repo": "dpdk"
         },
         {
-            "owner": "curl",
-            "repo": "curl"
+            "owner": "CGAL",
+            "repo": "cgal"
         },
         {
-            "owner": "grpc",
-            "repo": "grpc"
+            "owner": "mapbox",
+            "repo": "mapbox-gl-js"
         },
         {
-            "owner": "moby",
-            "repo": "moby"
+            "owner": "facebookresearch",
+            "repo": "faiss"
         },
         {
-            "owner": "docker",
-            "repo": "cli"
+            "owner": "jina-ai",
+            "repo": "jina"
+        },
+        {
+            "owner": "ZJU-OpenKS",
+            "repo": "OpenKS"
+        },
+        {
+            "owner": "delta-io",
+            "repo": "delta"
         }
     ],
     "need_sync_github_profile_repo_list": [
         {
-            "owner": "systemd",
-            "repo": "systemd"
+            "owner": "jupyter",
+            "repo": "notebook"
         },
         {
-            "owner": "openssl",
-            "repo": "openssl"
+            "owner": "jupyter",
+            "repo": "docker-stacks"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "jupyter_client"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "nbformat"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "jupyter.github.io"
+        },
+        {
+            "owner": "wasmerio",
+            "repo": "wasmer"
         },
         {
             "owner": "google",
-            "repo": "leveldb"
+            "repo": "jax"
         },
         {
-            "owner": "facebook",
-            "repo": "zstd"
+            "owner": "PaddlePaddle",
+            "repo": "Paddle"
         },
         {
-            "owner": "vim",
-            "repo": "vim"
+            "owner": "DPDK",
+            "repo": "dpdk"
         },
         {
-            "owner": "curl",
-            "repo": "curl"
+            "owner": "CGAL",
+            "repo": "cgal"
         },
         {
-            "owner": "grpc",
-            "repo": "grpc"
+            "owner": "mapbox",
+            "repo": "mapbox-gl-js"
         },
         {
-            "owner": "moby",
-            "repo": "moby"
+            "owner": "facebookresearch",
+            "repo": "faiss"
         },
         {
-            "owner": "docker",
-            "repo": "cli"
+            "owner": "jina-ai",
+            "repo": "jina"
+        },
+        {
+            "owner": "ZJU-OpenKS",
+            "repo": "OpenKS"
+        },
+        {
+            "owner": "delta-io",
+            "repo": "delta"
         }
     ],
     "need_sync_gits": [
         {
-            "owner": "systemd",
-            "repo": "systemd",
-            "url": "https://github.com/systemd/systemd.git"
+            "owner": "jupyter",
+            "repo": "notebook",
+            "url": "https://github.com/jupyter/notebook.git"
         },
         {
-            "owner": "openssl",
-            "repo": "openssl",
-            "url": "https://github.com/openssl/openssl.git"
+            "owner": "jupyter",
+            "repo": "docker-stacks",
+            "url": "https://github.com/jupyter/docker-stacks.git"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "jupyter_client",
+            "url": "https://github.com/jupyter/jupyter_client.git"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "nbformat",
+            "url": "https://github.com/jupyter/nbformat.git"
+        },
+        {
+            "owner": "jupyter",
+            "repo": "jupyter.github.io",
+            "url": "https://github.com/jupyter/jupyter.github.io.git"
+        },
+        {
+            "owner": "wasmerio",
+            "repo": "wasmer",
+            "url": "https://github.com/wasmerio/wasmer.git"
         },
         {
             "owner": "google",
-            "repo": "leveldb",
-            "url": "https://github.com/google/leveldb.git"
+            "repo": "jax",
+            "url": "https://github.com/google/jax.git"
         },
         {
-            "owner": "facebook",
-            "repo": "zstd",
-            "url": "https://github.com/facebook/zstd.git"
+            "owner": "PaddlePaddle",
+            "repo": "Paddle",
+            "url": "https://github.com/PaddlePaddle/Paddle.git"
         },
         {
-            "owner": "vim",
-            "repo": "vim",
-            "url": "https://github.com/vim/vim.git"
+            "owner": "DPDK",
+            "repo": "dpdk",
+            "url": "https://github.com/DPDK/dpdk.git"
         },
         {
-            "owner": "curl",
-            "repo": "curl",
-            "url": "https://github.com/curl/curl.git"
+            "owner": "CGAL",
+            "repo": "cgal",
+            "url": "https://github.com/CGAL/cgal.git"
         },
         {
-            "owner": "grpc",
-            "repo": "grpc",
-            "url": "https://github.com/grpc/grpc.git"
+            "owner": "mapbox",
+            "repo": "mapbox-gl-js",
+            "url": "https://github.com/mapbox/mapbox-gl-js.git"
         },
         {
-            "owner": "moby",
-            "repo": "moby",
-            "url": "https://github.com/moby/moby.git"
+            "owner": "facebookresearch",
+            "repo": "faiss",
+            "url": "https://github.com/facebookresearch/faiss.git"
         },
         {
-            "owner": "docker",
-            "repo": "cli",
-            "url": "https://github.com/docker/cli.git"
+            "owner": "jina-ai",
+            "repo": "jina",
+            "url": "https://github.com/jina-ai/jina.git"
+        },
+        {
+            "owner": "ZJU-OpenKS",
+            "repo": "OpenKS",
+            "url": "https://github.com/ZJU-OpenKS/OpenKS.git"
+        },
+        {
+            "owner": "delta-io",
+            "repo": "delta",
+            "url": "https://github.com/delta-io/delta.git"
         }
     ],
     "duration_of_sync_github_profiles": {
