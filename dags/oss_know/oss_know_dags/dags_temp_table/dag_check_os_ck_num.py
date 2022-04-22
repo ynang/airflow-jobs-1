@@ -17,11 +17,46 @@ with DAG(
     def do_check_os_ck_num(opensearch_conn_info, clickhouse_server_info):
         ck = get_clickhouse_client(clickhouse_server_info)
         opensearch_client = get_opensearch_client(opensearch_conn_info)
-        need_check_owner_repo = [("taichi-dev", "taichi"), ("facebookincubator", "BOLT"), ("dapr", "dapr"),
-                                 ("envoyproxy", "envoy"), ("CGAL", "cgal"), ("facebookresearch", "faiss"),
-                                 ("ClickHouse", "ClickHouse"), ("systemd", "systemd"), ("sveltejs", "svelte"),
-                                 ("jina-ai", "jina"), ("dcloudio", "uni-app")]
-
+        need_check_owner_repo = [("rust-lang", "rust"), ("rust-lang", "cargo"), ("rust-lang", "rfcs"), ("o3de", "o3de"),
+                                 ("org", "pub"), ("org", "pub"), ("org", "pub"), ("org", "pub"), ("org", "pub"),
+                                 ("taichi-dev", "taichi"), ("taichi-dev", "taichi_elements"),
+                                 ("taichi-dev", "games201"), ("bioinfo-pf-curie", "TMB"),
+                                 ("bioinfo-pf-curie", "mpiBWA"), ("bioinfo-pf-curie", "trainings"),
+                                 ("bioinfo-pf-curie", "HiTC"), ("bioinfo-pf-curie", "nf-VIF"),
+                                 ("bioinfo-pf-curie", "geniac"), ("qos-ch", "slf4j"), ("qos-ch", "logback"),
+                                 ("qos-ch", "reload4j"), ("tensorflow", "tensorflow"), ("pytorch", "pytorch"),
+                                 ("ray-project", "ray"), ("envoyproxy", "envoy"), ("cockroachdb", "cockroach"),
+                                 ("microsoft", "DeepSpeed"), ("lxc", "lxc"), ("libarchive", "libarchive"),
+                                 ("moby", "moby"), ("systemd", "systemd"), ("scanoss", "scanner.c"),
+                                 ("scanoss", "engine"), ("scanoss", "scanner.py"), ("scanoss", "quickscan"),
+                                 ("scanoss", "audit-workbench"), ("scanoss", "scanoss.py"), ("iovisor", "bcc"),
+                                 ("facebookincubator", "BOLT"), ("oracle", "graal"), ("JuliaLang", "julia"),
+                                 ("intel", "llvm"), ("eclipse-openj9", "openj9"), ("sveltejs", "svelte"),
+                                 ("dcloudio", "uni-app"), ("dapr", "dapr"), ("jupyter", "notebook"),
+                                 ("jupyter", "docker-stacks"), ("jupyter", "jupyter_client"), ("jupyter", "nbformat"),
+                                 ("jupyter", "jupyter.github.io"), ("wasmerio", "wasmer"), ("google", "jax"),
+                                 ("PaddlePaddle", "Paddle"), ("DPDK", "dpdk"), ("CGAL", "cgal"),
+                                 ("mapbox", "mapbox-gl-js"), ("facebookresearch", "faiss"), ("jina-ai", "jina"),
+                                 ("ZJU-OpenKS", "OpenKS"), ("delta-io", "delta"), ("greenplum-db", "gpdb"),
+                                 ("apache", "hudi"), ("apache", "iceberg"), ("MariaDB", "server"),
+                                 ("MariaDB", "mariadb-docker"), ("MariaDB", "galera"), ("MariaDB", "mariadb.org-tools"),
+                                 ("MariaDB", "randgen"), ("MariaDB", "webscalesql-5.6"), ("mongodb", "mongo"),
+                                 ("mongodb", "node-mongodb-native"), ("mongodb", "mongo-go-driver"),
+                                 ("mongodb", "mongoid"), ("mongodb", "mongo-python-driver"),
+                                 ("mongodb", "mongo-csharp-driver"), ("mysql", "mysql-server"), ("neo4j", "neo4j"),
+                                 ("planetscale", "beam"), ("planetscale", "docs"), ("planetscale", "cli"),
+                                 ("planetscale", "planetscale-go"), ("planetscale", "vitess"),
+                                 ("ClickHouse", "ClickHouse"), ("questdb", "questdb"), ("facebook", "rocksdb"),
+                                 ("P-H-C", "phc-winner-argon2"), ("hercules-team", "augeas"), ("Gandi", "bridge-utils"),
+                                 ("google", "brotli"), ("libarchive", "bzip2"), ("coreutils", "coreutils"),
+                                 ("Distrotech", "cpio"), ("cracklib", "cracklib"), ("cronie-crond", "cronie"),
+                                 ("cyrusimap", "cyrus-sasl"), ("imartinezortiz", "7-zip-lzma-sdk-java"),
+                                 ("alsa-project", "alsa-lib"), ("linux-audit", "audit-userspace"),
+                                 ("linux-audit", "audit-kernel"), ("brltty", "brltty"), ("meefik", "busybox"),
+                                 ("c-ares", "c-ares"), ("mbroz", "cryptsetup"), ("SSSD", "ding-libs"),
+                                 ("imp", "dnsmasq"), ("docker", "compose"), ("docker", "roadmap"),
+                                 ("docker", "awesome-compose"), ("docker", "build-push-action"),
+                                 ("docker", "compose-cli"), ("docker", "node-sdk")]
         need_check_table_name = ['gits', 'github_commits', 'github_pull_requests', 'github_issues',
                                  'github_issues_timeline', 'github_issues_comments']
         no_data_ck = []
@@ -29,7 +64,6 @@ with DAG(
         for table_name in need_check_table_name:
             for owner, repo in need_check_owner_repo:
                 sql = f"select count() from {table_name} where  search_key__owner = '{owner}' and search_key__repo = '{repo}'"
-                # sql = f"select count() from gits where  search_key__owner = 'systemd' and search_key__repo = 'systemd'"
                 ck_num_list = ck.execute_no_params(sql)
                 ck_num = ck_num_list[0][0]
 
