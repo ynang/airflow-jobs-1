@@ -4,8 +4,7 @@ from datetime import datetime
 from threading import Thread
 from urllib.parse import urlparse
 
-from geopy.exc import GeocoderServiceError, GeocoderTimedOut
-import geopy
+from geopy.exc import GeocoderServiceError, GeocoderTimedOut, GeocoderQueryError
 import redis
 import requests
 import urllib3
@@ -85,6 +84,7 @@ class EmptyResponse:
     def json(self):
         return {}
 
+
 class EmptyListResponse:
     """An fake empty http response"""
 
@@ -93,6 +93,7 @@ class EmptyListResponse:
 
     def json(self):
         return []
+
 
 class EmptyObjectResponse:
     """An fake empty http response"""
@@ -246,6 +247,7 @@ def infer_country_from_location(github_location):
     :param  github_location: location from a GitHub profile
     :return country_name  : the english name of a country
     """
+    github_location = bytes(github_location, 'utf-8').decode('utf-8', 'ignore')
     geo_res = do_geocode(github_location, language='en')
     if geo_res:
         return geo_res.address.split(',')[-1].strip()
@@ -270,6 +272,7 @@ def infer_geo_info_from_location(github_location):
     :param  github_location: the location given by github
     :return GoogleGeoInfo  : the information of GoogleGeo inferred by location
     """
+    github_location = bytes(github_location, 'utf-8').decode('utf-8', 'ignore')
     geo_res = do_geocode(github_location, language='en')
     if geo_res and geo_res.raw and ("address_components" in geo_res.raw) and geo_res.raw["address_components"]:
         address_components = geo_res.raw["address_components"]
@@ -280,7 +283,8 @@ def infer_geo_info_from_location(github_location):
             except KeyError as e:
                 logger.info(f"The key not exists in address_component :{e}")
             except IndexError as e:
-                logger.info(f"github_location:{github_location}, address_components:{address_components}, IndexError:{e}")
+                logger.info(
+                    f"github_location:{github_location}, address_components:{address_components}, IndexError:{e}")
         return geo_info_from_location
     return None
 
